@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sort xmlns="http://www.demandware.com/xml/impex/sort/2009-05-15">
+    <dynamic-attribute dynamic-attribute-id="Holiday">
+        <weighted-attribute>
+            <attribute-path>product.activeData.unitsDay</attribute-path>
+            <weight>33</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.lookToBookRatioDay</attribute-path>
+            <weight>33</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.impressionsDay</attribute-path>
+            <weight>34</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Sales Velocity, LTB, Revenue - 7 Days">
+        <weighted-attribute>
+            <attribute-path>product.activeData.salesVelocityWeek</attribute-path>
+            <weight>33</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.lookToBookRatioWeek</attribute-path>
+            <weight>34</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.revenueWeek</attribute-path>
+            <weight>33</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="PS-WhatsHot">
+        <weighted-attribute>
+            <attribute-path>product.activeData.revenueWeek</attribute-path>
+            <weight>35</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.ordersWeek</attribute-path>
+            <weight>20</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>sorting.predictive-sort</attribute-path>
+            <weight>35</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>sorting.text-relevance</attribute-path>
+            <weight>10</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Days Available 90, Revenue 10">
+        <weighted-attribute>
+            <attribute-path>product.activeData.daysAvailable</attribute-path>
+            <weight>90</weight>
+            <default-value>average</default-value>
+            <direction>ascending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.revenueWeek</attribute-path>
+            <weight>10</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Days Available 80, Revenue 20">
+        <weighted-attribute>
+            <attribute-path>product.activeData.daysAvailable</attribute-path>
+            <weight>80</weight>
+            <default-value>average</default-value>
+            <direction>ascending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.revenueWeek</attribute-path>
+            <weight>20</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Search DA">
+        <weighted-attribute>
+            <attribute-path>sorting.predictive-sort</attribute-path>
+            <weight>40</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>sorting.text-relevance</attribute-path>
+            <weight>40</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.revenueWeek</attribute-path>
+            <weight>20</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Most Popualar">
+        <weighted-attribute>
+            <attribute-path>product.activeData.lookToBookRatioWeek</attribute-path>
+            <weight>33</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.unitsYear</attribute-path>
+            <weight>33</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.impressionsWeek</attribute-path>
+            <weight>34</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Days Available 50, Revenue 50">
+        <weighted-attribute>
+            <attribute-path>product.activeData.daysAvailable</attribute-path>
+            <weight>50</weight>
+            <default-value>average</default-value>
+            <direction>ascending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.revenueWeek</attribute-path>
+            <weight>50</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Days Available 30, Revenue 70">
+        <weighted-attribute>
+            <attribute-path>product.activeData.daysAvailable</attribute-path>
+            <weight>30</weight>
+            <default-value>average</default-value>
+            <direction>ascending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.revenueWeek</attribute-path>
+            <weight>70</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Views, Sales Velocity, LTB - 7 Days">
+        <weighted-attribute>
+            <attribute-path>product.activeData.viewsWeek</attribute-path>
+            <weight>33</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.salesVelocityWeek</attribute-path>
+            <weight>33</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.lookToBookRatioWeek</attribute-path>
+            <weight>34</weight>
+            <default-value>average</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Days Available 70, Revenue 30">
+        <weighted-attribute>
+            <attribute-path>product.activeData.daysAvailable</attribute-path>
+            <weight>70</weight>
+            <default-value>average</default-value>
+            <direction>ascending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.revenueWeek</attribute-path>
+            <weight>30</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Days Available 40, Revenue 60">
+        <weighted-attribute>
+            <attribute-path>product.activeData.daysAvailable</attribute-path>
+            <weight>40</weight>
+            <default-value>average</default-value>
+            <direction>ascending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.revenueWeek</attribute-path>
+            <weight>60</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <dynamic-attribute dynamic-attribute-id="Days Available 60, Revenue 40">
+        <weighted-attribute>
+            <attribute-path>product.activeData.daysAvailable</attribute-path>
+            <weight>60</weight>
+            <default-value>average</default-value>
+            <direction>ascending</direction>
+        </weighted-attribute>
+        <weighted-attribute>
+            <attribute-path>product.activeData.revenueWeek</attribute-path>
+            <weight>40</weight>
+            <default-value>minimum</default-value>
+            <direction>descending</direction>
+        </weighted-attribute>
+    </dynamic-attribute>
+
+    <sorting-rule rule-id="EPSort">
+        <description>Just for You</description>
+        <sorting-attributes>
+            <predictive-sort>
+                <include-text-relevance>false</include-text-relevance>
+            </predictive-sort>
+        </sorting-attributes>
+    </sorting-rule>
+
+    <sorting-rule rule-id="featured">
+        <description>Manual Placement then What's Hot</description>
+        <sorting-attributes>
+            <category-position/>
+            <attribute>
+                <attribute-path>product.activeData.revenueWeek</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+            <attribute>
+                <attribute-path>product.activeData.ordersWeek</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+        </sorting-attributes>
+    </sorting-rule>
+
+    <sorting-rule rule-id="high-price">
+        <description>High Price</description>
+        <sorting-attributes>
+            <attribute>
+                <attribute-path>product.custom.priceafterdiscount</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+        </sorting-attributes>
+    </sorting-rule>
+
+    <sorting-rule rule-id="low-price">
+        <description>Low Price</description>
+        <sorting-attributes>
+            <attribute>
+                <attribute-path>product.custom.priceafterdiscount</attribute-path>
+                <direction>ascending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+        </sorting-attributes>
+    </sorting-rule>
+
+    <sorting-rule rule-id="most-popular">
+        <description>Most Popular</description>
+        <sorting-attributes>
+            <attribute>
+                <attribute-path>product.activeData.revenueMonth</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+            <attribute>
+                <attribute-path>product.activeData.ordersMonth</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+        </sorting-attributes>
+    </sorting-rule>
+
+    <sorting-rule rule-id="price-high-to-low">
+        <description>High Price</description>
+        <sorting-attributes>
+            <attribute>
+                <attribute-path>product.custom.priceafterdiscount</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+        </sorting-attributes>
+    </sorting-rule>
+
+    <sorting-rule rule-id="search">
+        <description>Site Search Results</description>
+        <sorting-attributes>
+            <dynamic-attribute dynamic-attribute-id="Search DA" attribute-context="site">
+                <include-text-relevance>true</include-text-relevance>
+            </dynamic-attribute>
+        </sorting-attributes>
+    </sorting-rule>
+
+    <sorting-rule rule-id="whats-hot">
+        <description>What's Hot</description>
+        <sorting-attributes>
+            <attribute>
+                <attribute-path>product.activeData.revenueWeek</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+            <attribute>
+                <attribute-path>product.activeData.ordersWeek</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+        </sorting-attributes>
+    </sorting-rule>
+
+    <sorting-rule rule-id="whats-new">
+        <description>What's New with Category Preference</description>
+        <sorting-attributes>
+            <attribute>
+                <attribute-path>product.searchPlacement</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+            <attribute>
+                <attribute-path>product.custom.sellableProductDate</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+            <attribute>
+                <attribute-path>product.activeData.revenueWeek</attribute-path>
+                <direction>descending</direction>
+                <include-text-relevance>false</include-text-relevance>
+            </attribute>
+        </sorting-attributes>
+    </sorting-rule>
+
+    <sorting-rule-assignment category-id="plus-size-two-piece-sets" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-bottoms" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-two-piece-sets" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="root" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="girls-coordinates-4-6x" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="girls-school-uniforms-2t-4t" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="toddler-shoes" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="baby-shoes" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="best-sellers-womens-shoes" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-belts" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="boys-school-uniforms-2t-4t" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-top-and-bottom-sets" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="boys-coordinates-8-20" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-slides" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-sundresses" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-shoes-40-percent-off-sale" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-shoes-50-percent-off-sale" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-shoes-60-percent-off-sale" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="americana-collection-for-toddlers" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-sweaters" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="fall-shoes-collection" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="girls-school-uniforms-4-6x" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="girls-plus-size-school-uniforms" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-sundresses" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="collection-workwear-1" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="toddler-gladiator-sandals" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-whats-new" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="boys-school-uniforms-8-14" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="girls-school-uniforms-7-14" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="girls-flats" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="boys-school-uniforms-16-20" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-flats" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="shoes-whats-new" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-booties" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-boots" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-accessories-whats-new" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="young-women-school-uniforms" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="girls-whats-new" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="trending-holiday" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="sale-on-womens-shoes" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="sale-on-womens-swim" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="sale-on-plus-size-swim" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-activewear" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-shoes-30-off" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-shoes-20-off" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-whats-new" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-bras" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-panties" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="toddler-jellies" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="whats-new" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="10-dollar-shoes-for-women" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-sandals" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-heels-and-womens-pumps" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-wedges" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-top-and-bottom-sets" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-sneakers" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-weatherproof-boots" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-wide-calf-boots" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="boys-school-uniforms-4-7" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="boys-coordinates-4-7" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="girls-school-uniforms-16-20" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="boys-husky-school-uniforms" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="girls-dresses-7-16" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="boys-accessories" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="trending-velvet" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-activewear" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="girls-coordinates-7-16" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-pajamas" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-bras" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-shapewear" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-bridal-lingerie" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="bikini-tops-1" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-clothing" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-dresses" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-bodysuits" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-dresses" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-plus-size-clothing" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-tights" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-jumpsuits-rompers" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="shoes-back-in-stock" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-bottoms" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-lingerie-sets" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-lingerie-sets" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="bikini-tops" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-bikinis-1" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-panties" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-pajamas" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="collection-marianne" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="collection-workwear" rule-id="whats-new" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-lingerie" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-jackets-and-blazers" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-jumpsuits-rompers" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-sweaters" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-lingerie-shop-by-size" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-swimwear" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-tops" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-swimwear" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-tops" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="collection-reebok-clothing" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-sneakers-1" rule-id="featured" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="bikini-bottoms-1" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-sexy-lingerie" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-tights" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="bikini-sets" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="one-piece-swimsuits" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-cover-ups" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="plus-size-bikini-tops" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-jackets-and-blazers" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-lingerie" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="womens-reebok-workout-clothing" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-rule-assignment category-id="bikini-bottoms" rule-id="whats-hot" rule-context="site"/>
+
+    <sorting-options>
+        <sorting-option option-id="whats-hot">
+            <rule-id>whats-hot</rule-id>
+            <rule-context>site</rule-context>
+            <display-name xml:lang="x-default">Whats Hot</display-name>
+        </sorting-option>
+        <sorting-option option-id="price-low">
+            <rule-id>low-price</rule-id>
+            <rule-context>site</rule-context>
+            <display-name xml:lang="x-default">Price - Low to High</display-name>
+        </sorting-option>
+        <sorting-option option-id="whats-new">
+            <rule-id>whats-new</rule-id>
+            <rule-context>site</rule-context>
+            <display-name xml:lang="x-default">Newest</display-name>
+        </sorting-option>
+        <sorting-option option-id="most-popular">
+            <rule-id>most-popular</rule-id>
+            <rule-context>site</rule-context>
+            <display-name xml:lang="x-default">Most Popular</display-name>
+        </sorting-option>
+        <sorting-option option-id="price-high">
+            <rule-id>high-price</rule-id>
+            <rule-context>site</rule-context>
+            <display-name xml:lang="x-default">Price - High to Low</display-name>
+        </sorting-option>
+        <sorting-option option-id="featured">
+            <rule-id>featured</rule-id>
+            <rule-context>site</rule-context>
+            <display-name xml:lang="x-default">Featured</display-name>
+        </sorting-option>
+    </sorting-options>
+
+    <keyword-search-sorting-rule-assignment rule-id="search" rule-context="site"/>
+
+</sort>
